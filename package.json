@@ -1,0 +1,21 @@
+{
+  "name": "pu-notice-bot",
+  "version": "1.0.0",
+  "description": "Parse RSS feed from Pokhara University website and send notice to discord channel",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "1.0.0-rc.12",
+    "cron": "^2.4.3",
+    "discord.js": "^14.13.0",
+    "dotenv": "^16.3.1",
+    "rss-parser": "^3.13.0",
+    "sqlite3": "^5.1.6"
+  }
+}
