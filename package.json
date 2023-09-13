@@ -17,6 +17,9 @@
     "rss-parser": "^3.13.0",
     "sqlite3": "^5.1.6"
   },
+  "engines": {
+    "node": "16.x"
+  },
   "devDependencies": {
     "dotenv": "^16.3.1"
   }

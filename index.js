@@ -25,7 +25,7 @@ db.run(
 
 const fetchChannels = async () => {
   return new Promise((resolve, reject) => {
-    db.all("SELECT * FROM channels", [], (err, rows) => {
+    db.all("SELECT DISTINCT channelId FROM channels", [], (err, rows) => {
       if (err) {
         reject(err);
       }
