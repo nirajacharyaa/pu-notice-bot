@@ -6,8 +6,12 @@ import cron from "cron";
 import sqlite3 from "sqlite3";
 
 import fs from "fs";
-import path from "path";
+import path, { dirname } from "path";
 import { Collection } from "discord.js";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const feedUrl = "https://pu.edu.np/notice/feed/";
 let latestPostPubDate = null;
